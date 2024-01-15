@@ -61,14 +61,14 @@ $$;
 
 
 CREATE OR REPLACE procedure delete_post(
-    post_id bigint,
+    post1_id bigint,
     post_title
 )
     language plpgsql
 as
 $$
 begin
-
+ delete from post where post.id=post1_id;
 end;
 $$;
 
